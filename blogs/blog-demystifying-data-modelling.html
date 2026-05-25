@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Demystifying Data Modelling - A guide to dimensional design and data structure"
+    />
+    <title>Demystifying Data Modelling | Sabyasachi Das</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-mark"><a href="../index.html" style="text-decoration: none; color: inherit;">SD</a></div>
+          <div>
+            <p class="eyebrow">Sabyasachi Das</p>
+            <p class="brand-subtitle">Senior Data Engineer | GenAI Enthusiast</p>
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="index.html">Blogs</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html#opportunities">Opportunities</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section">
+          <div class="blog-header">
+            <div>
+              <p class="eyebrow">Blog Post</p>
+              <h1>Demystifying Data Modelling</h1>
+            </div>
+            <div class="blog-meta">
+              <span>Data Engineering</span>
+              <span>•</span>
+              <span>5 min read</span>
+            </div>
+          </div>
+
+          <article class="blog-content">
+            <p>
+              Data modelling is one of the most foundational skills in data engineering. Yet, many engineers approach it with confusion or underestimation. This post walks through the principles, patterns, and practical decisions that make a data model effective.
+            </p>
+
+            <h2>What is Data Modelling?</h2>
+            <p>
+              Data modelling is the process of creating a structured representation of data that answers specific business questions efficiently. It's not just about storing data—it's about organizing data in a way that makes analysis, reporting, and AI features possible at scale.
+            </p>
+
+            <h2>Key Principles</h2>
+            <h3>1. Understand Your Queries First</h3>
+            <p>
+              Before designing tables, understand what questions you need to answer. A data model optimized for one query pattern might be terrible for another. Start with use cases, not with raw data.
+            </p>
+
+            <h3>2. Dimensional Design</h3>
+            <p>
+              The star schema (facts and dimensions) is a proven pattern for analytical workloads. Facts are events or transactions; dimensions are the context (time, location, customer, product). This separation makes queries faster and more intuitive.
+            </p>
+
+            <h3>3. Denormalization for Analytics</h3>
+            <p>
+              Unlike OLTP systems, analytical databases benefit from denormalization. Duplicating data strategically reduces joins and speeds up queries. The tradeoff: larger storage, but acceptable for most cloud warehouses.
+            </p>
+
+            <h2>Common Patterns</h2>
+            <ul>
+              <li><strong>Star Schema:</strong> One fact table surrounded by dimensions. Best for enterprise analytics.</li>
+              <li><strong>Snowflake Schema:</strong> Normalized dimensions. Saves space but adds complexity.</li>
+              <li><strong>Data Vault:</strong> Hub-and-spoke design for complex, evolving data. Great for enterprise data warehouses.</li>
+            </ul>
+
+            <h2>Practical Tips</h2>
+            <p>
+              Design iteratively. Start with a simple model, test it against real queries, and refine. Document your decisions—future you (and your team) will appreciate it. And always consider the cost: storage, compute, and maintenance.
+            </p>
+
+            <p>
+              <a href="index.html">← Back to all posts</a>
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built by Sabyasachi Das.</p>
+        <p>Data engineering, AI, and practical product thinking.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

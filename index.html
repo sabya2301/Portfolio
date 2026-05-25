@@ -30,9 +30,10 @@
         </div>
 
         <nav class="site-nav" aria-label="Primary">
-          <a href="#about">About Me</a>
+          <a href="#" id="homeLink">Home</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="blogs/index.html">Blogs</a>
           <a href="#contact">Contact</a>
           <a href="#opportunities">Opportunities</a>
         </nav>
@@ -67,13 +68,11 @@
           </div>
 
           <aside class="hero-card">
-            <p class="card-label">At a glance</p>
-            <ul class="quick-facts">
-              <li><strong>6+ years</strong> in data engineering</li>
-              <li><strong>800GB-1TB</strong> daily ingestion workloads</li>
-              <li><strong>GenAI</strong> text-to-SQL and RAG solutions</li>
-              <li><strong>Pharma, BFSI, Retail</strong> domain experience</li>
-            </ul>
+            <p class="card-label">Latest Writings</p>
+            <p style="margin: 0 0 16px 0; font-size: 14px; line-height: 1.6;">
+              I write about data engineering, GenAI solutions, and practical lessons from building production systems. Explore my thoughts on architecture, optimization, and AI-powered workflows.
+            </p>
+            <a href="blogs/index.html" class="button secondary" style="width: 100%; text-align: center;">Read Articles</a>
           </aside>
         </section>
 
@@ -324,11 +323,31 @@
               <a class="button primary" href="mailto:sabya23011998@gmail.com?subject=Freelance%20or%20Job%20Opportunity">
                 Start a Conversation
               </a>
-              <a class="button secondary" href="#contact">View Contact Details</a>
+              <button class="button primary" id="viewContactBtn">View Contact Details</button>
             </div>
           </div>
         </section>
       </main>
+
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <button class="modal-close" id="closeContactBtn">&times;</button>
+          <div class="modal-header">
+            <p class="eyebrow">Contact Details</p>
+            <h2>Get in touch</h2>
+          </div>
+          <div class="contact-details">
+            <div class="detail-item">
+              <p class="detail-label">Email</p>
+              <a href="mailto:sabya23011998@gmail.com" class="detail-value">sabya23011998@gmail.com</a>
+            </div>
+            <div class="detail-item">
+              <p class="detail-label">Phone</p>
+              <a href="tel:+917319470401" class="detail-value">+91 73194 70401</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer class="site-footer">
         <p>Built by Sabyasachi Das.</p>

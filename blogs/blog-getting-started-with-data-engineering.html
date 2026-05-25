@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Getting started with Data Engineering - A beginner's guide to foundational concepts and tools"
+    />
+    <title>Getting started with Data Engineering | Sabyasachi Das</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-mark"><a href="../index.html" style="text-decoration: none; color: inherit;">SD</a></div>
+          <div>
+            <p class="eyebrow">Sabyasachi Das</p>
+            <p class="brand-subtitle">Senior Data Engineer | GenAI Enthusiast</p>
+          </div>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html#about">About Me</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="index.html">Blogs</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="../index.html#opportunities">Opportunities</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="section">
+          <div class="blog-header">
+            <div>
+              <p class="eyebrow">Blog Post</p>
+              <h1>Getting started with Data Engineering</h1>
+            </div>
+            <div class="blog-meta">
+              <span>Data Engineering</span>
+              <span>•</span>
+              <span>7 min read</span>
+            </div>
+          </div>
+
+          <article class="blog-content">
+            <p>
+              Thinking about entering data engineering? This guide covers the mindset, foundational concepts, and practical steps to start your journey.
+            </p>
+
+            <h2>What Do Data Engineers Actually Do?</h2>
+            <p>
+              Data engineers build and maintain systems that collect, store, process, and deliver data. You're the infrastructure behind analytics, reports, dashboards, and increasingly, AI models. Your job is to make data accessible, reliable, and fast.
+            </p>
+
+            <h2>Core Concepts to Understand</h2>
+            <h3>1. ETL (Extract, Transform, Load)</h3>
+            <p>
+              Most of your work will involve ETL pipelines. Extract data from sources, transform it into a usable format, and load it into a warehouse or lake. Understand this cycle deeply.
+            </p>
+
+            <h3>2. Data Sources vs. Data Warehouses vs. Data Lakes</h3>
+            <ul>
+              <li><strong>Data Sources:</strong> APIs, databases, logs, events. Raw data lives here.</li>
+              <li><strong>Data Warehouse:</strong> Structured, organized data for analytics. Think Snowflake, Redshift, BigQuery.</li>
+              <li><strong>Data Lake:</strong> Centralized storage (usually S3, HDFS) for raw and processed data. Often feeds warehouses.</li>
+            </ul>
+
+            <h3>3. Batch vs. Stream Processing</h3>
+            <p>
+              Batch: Process data in scheduled intervals (daily, hourly). Tools: Spark, dbt, Airflow.
+              Stream: Process data in real-time as it arrives. Tools: Kafka, Flink, Spark Streaming.
+              Most pipelines are hybrid.
+            </p>
+
+            <h2>Technologies to Learn</h2>
+            <p>
+              Don't learn everything at once. Start with these:
+            </p>
+            <ul>
+              <li><strong>SQL:</strong> Non-negotiable. Master it.</li>
+              <li><strong>One Programming Language:</strong> Python or Scala. Python is more beginner-friendly.</li>
+              <li><strong>One Cloud Platform:</strong> AWS, GCP, or Azure. Pick one, go deep.</li>
+              <li><strong>One Orchestration Tool:</strong> Airflow or Databricks Workflows. Understand how to schedule pipelines.</li>
+            </ul>
+
+            <h2>The Mindset Shift</h2>
+            <p>
+              Think about reliability, scalability, and maintainability. A query that works for 1GB might break at 1TB. Code that's fine for one-off jobs is a nightmare in production. Write with that in mind.
+            </p>
+
+            <p>
+              <a href="index.html">← Back to all posts</a>
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built by Sabyasachi Das.</p>
+        <p>Data engineering, AI, and practical product thinking.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
